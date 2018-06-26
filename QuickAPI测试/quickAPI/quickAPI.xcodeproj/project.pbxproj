@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C039BB32045395C004CB2A5 /* SKF_SM2Cipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BAA2045395C004CB2A5 /* SKF_SM2Cipher.m */; };
+		1C039BB42045395C004CB2A5 /* SKF_SM2SignatureKeyPairGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BAB2045395C004CB2A5 /* SKF_SM2SignatureKeyPairGenerator.m */; };
+		1C039BB52045395C004CB2A5 /* KeyPairGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BAE2045395C004CB2A5 /* KeyPairGenerator.m */; };
+		1C039BB62045395C004CB2A5 /* KeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BAF2045395C004CB2A5 /* KeyPair.m */; };
+		1C039BB72045395C004CB2A5 /* SKF_SM2CipherKeyPairGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BB12045395C004CB2A5 /* SKF_SM2CipherKeyPairGenerator.m */; };
+		1C039BB82045395C004CB2A5 /* SKF_SM2Signer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BB22045395C004CB2A5 /* SKF_SM2Signer.m */; };
+		1C039BC720453AEA004CB2A5 /* SM2PublicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BBA20453AEA004CB2A5 /* SM2PublicKey.m */; };
+		1C039BC820453AEA004CB2A5 /* SM2SignatureParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BBD20453AEA004CB2A5 /* SM2SignatureParameter.m */; };
+		1C039BC920453AEA004CB2A5 /* SM2PrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BBE20453AEA004CB2A5 /* SM2PrivateKey.m */; };
+		1C039BCA20453AEA004CB2A5 /* SM2KeyPairParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BBF20453AEA004CB2A5 /* SM2KeyPairParameter.m */; };
+		1C039BCB20453AEA004CB2A5 /* SM2KeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BC020453AEA004CB2A5 /* SM2KeyPair.m */; };
+		1C039BCF20453C51004CB2A5 /* SKF_SM2Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BCD20453C51004CB2A5 /* SKF_SM2Engine.m */; };
+		1C039BD1204543DC004CB2A5 /* SM2Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BD0204543DC004CB2A5 /* SM2Test.m */; };
+		1C109139202A965100BCE55E /* SKF_HMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C109134202A965100BCE55E /* SKF_HMAC.m */; };
+		1C10913A202A965100BCE55E /* MAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C109136202A965100BCE55E /* MAC.m */; };
+		1C3D4733202BE69900FA8873 /* AlgorithmParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D4731202BE69800FA8873 /* AlgorithmParameters.m */; };
+		1C46B731202068EF00C3398F /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C46B72C202068EE00C3398F /* StringUtils.m */; };
+		1C46B73420206D3800C3398F /* MultiKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C5C3BC202061200043FE33 /* MultiKey.framework */; };
+		1C471DA0204789CD0082AB72 /* Signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C471D9E204789CD0082AB72 /* Signature.m */; };
+		1C471DA120478C460082AB72 /* SimpleSecureCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C5C3B3202043270043FE33 /* SimpleSecureCore.m */; };
+		1C4FD3052027EA1400FCA312 /* IvParameterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FD3012027EA1400FCA312 /* IvParameterSpec.m */; };
+		1C4FD3062027EA1400FCA312 /* SecretKeySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FD3032027EA1400FCA312 /* SecretKeySpec.m */; };
+		1C5BC4FA2022EDFC0013A982 /* SKF_SM3Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5BC4F62022EDFC0013A982 /* SKF_SM3Digest.m */; };
+		1C5BC4FB2022EDFC0013A982 /* MessageDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5BC4F82022EDFC0013A982 /* MessageDigest.m */; };
+		1C5BC4FE2022EE2B0013A982 /* ErrorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5BC4FD2022EE2B0013A982 /* ErrorUtil.m */; };
+		1C5BD4832048DFFD009EC08E /* Signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C471D9E204789CD0082AB72 /* Signature.m */; };
+		1C5BD4842048DFFF009EC08E /* KeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BAF2045395C004CB2A5 /* KeyPair.m */; };
+		1C5BD4852048E001009EC08E /* KeyPairGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BAE2045395C004CB2A5 /* KeyPairGenerator.m */; };
+		1C5BD4862048E006009EC08E /* SKF_SM2Cipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BAA2045395C004CB2A5 /* SKF_SM2Cipher.m */; };
+		1C5BD4872048E008009EC08E /* SKF_SM2CipherKeyPairGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BB12045395C004CB2A5 /* SKF_SM2CipherKeyPairGenerator.m */; };
+		1C5BD4882048E00C009EC08E /* SKF_SM2SignatureKeyPairGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BAB2045395C004CB2A5 /* SKF_SM2SignatureKeyPairGenerator.m */; };
+		1C5BD4892048E00E009EC08E /* SKF_SM2Signer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BB22045395C004CB2A5 /* SKF_SM2Signer.m */; };
+		1C5BD48A2048E0A5009EC08E /* MAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C109136202A965100BCE55E /* MAC.m */; };
+		1C5BD48B2048E0A7009EC08E /* SKF_HMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C109134202A965100BCE55E /* SKF_HMAC.m */; };
+		1C5BD4912048E0CD009EC08E /* AlgorithmParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D4731202BE69800FA8873 /* AlgorithmParameters.m */; };
+		1C5BD4932048E36A009EC08E /* SKF_SM2Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BCD20453C51004CB2A5 /* SKF_SM2Engine.m */; };
+		1C5BD4942048E373009EC08E /* MessageDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5BC4F82022EDFC0013A982 /* MessageDigest.m */; };
+		1C5BD4952048E376009EC08E /* SKF_SM3Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5BC4F62022EDFC0013A982 /* SKF_SM3Digest.m */; };
+		1C5BD4962048E3A6009EC08E /* SM2KeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BC020453AEA004CB2A5 /* SM2KeyPair.m */; };
+		1C5BD4972048E3A9009EC08E /* SM2KeyPairParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BBF20453AEA004CB2A5 /* SM2KeyPairParameter.m */; };
+		1C5BD4982048E3AD009EC08E /* SM2PrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BBE20453AEA004CB2A5 /* SM2PrivateKey.m */; };
+		1C5BD4992048E3B0009EC08E /* SM2PublicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BBA20453AEA004CB2A5 /* SM2PublicKey.m */; };
+		1C5BD49A2048E3B2009EC08E /* SM2SignatureParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C039BBD20453AEA004CB2A5 /* SM2SignatureParameter.m */; };
+		1C5BD49B2048E777009EC08E /* IvParameterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FD3012027EA1400FCA312 /* IvParameterSpec.m */; };
+		1C5BD49C2048E77A009EC08E /* SecretKeySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FD3032027EA1400FCA312 /* SecretKeySpec.m */; };
+		1C8DA1D720439A8C007841B2 /* SecureRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DA1D520439A8C007841B2 /* SecureRandom.m */; };
+		1C8DA1D820439A8C007841B2 /* SecureRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DA1D520439A8C007841B2 /* SecureRandom.m */; };
+		1C8DA1DB20439AA0007841B2 /* Certificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DA1D920439AA0007841B2 /* Certificate.m */; };
+		1C8DA1DC20439AA0007841B2 /* Certificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DA1D920439AA0007841B2 /* Certificate.m */; };
+		1C8DA1DE2043B495007841B2 /* SM4Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DA1DD2043B495007841B2 /* SM4Test.m */; };
+		1C8DA1E62043E2CF007841B2 /* SKF_SM4Cipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DA1E32043E2CF007841B2 /* SKF_SM4Cipher.m */; };
+		1C8DA1E72043E2CF007841B2 /* SKF_SM4Cipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DA1E32043E2CF007841B2 /* SKF_SM4Cipher.m */; };
+		1C8DA1E82043E2CF007841B2 /* Cipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DA1E42043E2CF007841B2 /* Cipher.m */; };
+		1C8DA1E92043E2CF007841B2 /* Cipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DA1E42043E2CF007841B2 /* Cipher.m */; };
+		D8C5C38B202042B50043FE33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C5C38A202042B50043FE33 /* AppDelegate.m */; };
+		D8C5C38E202042B50043FE33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C5C38D202042B50043FE33 /* ViewController.m */; };
+		D8C5C391202042B50043FE33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C5C38F202042B50043FE33 /* Main.storyboard */; };
+		D8C5C394202042B50043FE33 /* quickAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8C5C392202042B50043FE33 /* quickAPI.xcdatamodeld */; };
+		D8C5C396202042B50043FE33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C5C395202042B50043FE33 /* Assets.xcassets */; };
+		D8C5C399202042B50043FE33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C5C397202042B50043FE33 /* LaunchScreen.storyboard */; };
+		D8C5C39C202042B50043FE33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C5C39B202042B50043FE33 /* main.m */; };
+		D8C5C3A6202042B50043FE33 /* quickAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C5C3A5202042B50043FE33 /* quickAPITests.m */; };
+		D8C5C3B4202043270043FE33 /* SimpleSecureCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C5C3B3202043270043FE33 /* SimpleSecureCore.m */; };
+		D8C5C3BD202061200043FE33 /* MultiKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C5C3BC202061200043FE33 /* MultiKey.framework */; };
+		D8C5C3C02020617F0043FE33 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C5C3BF202061750043FE33 /* libstdc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8C5C3A2202042B50043FE33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C5C37E202042B50043FE33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8C5C385202042B50043FE33;
+			remoteInfo = quickAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C039BA52045395C004CB2A5 /* SKF_SM2SignatureKeyPairGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKF_SM2SignatureKeyPairGenerator.h; sourceTree = "<group>"; };
+		1C039BA62045395C004CB2A5 /* KeyPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyPair.h; sourceTree = "<group>"; };
+		1C039BA72045395C004CB2A5 /* KeyPairGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyPairGenerator.h; sourceTree = "<group>"; };
+		1C039BA82045395C004CB2A5 /* SKF_SM2Signer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKF_SM2Signer.h; sourceTree = "<group>"; };
+		1C039BA92045395C004CB2A5 /* SKF_SM2CipherKeyPairGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKF_SM2CipherKeyPairGenerator.h; sourceTree = "<group>"; };
+		1C039BAA2045395C004CB2A5 /* SKF_SM2Cipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKF_SM2Cipher.m; sourceTree = "<group>"; };
+		1C039BAB2045395C004CB2A5 /* SKF_SM2SignatureKeyPairGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKF_SM2SignatureKeyPairGenerator.m; sourceTree = "<group>"; };
+		1C039BAC2045395C004CB2A5 /* SignatureSpi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignatureSpi.h; sourceTree = "<group>"; };
+		1C039BAD2045395C004CB2A5 /* KeyPairGeneratorSpi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyPairGeneratorSpi.h; sourceTree = "<group>"; };
+		1C039BAE2045395C004CB2A5 /* KeyPairGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyPairGenerator.m; sourceTree = "<group>"; };
+		1C039BAF2045395C004CB2A5 /* KeyPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyPair.m; sourceTree = "<group>"; };
+		1C039BB02045395C004CB2A5 /* SKF_SM2Cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKF_SM2Cipher.h; sourceTree = "<group>"; };
+		1C039BB12045395C004CB2A5 /* SKF_SM2CipherKeyPairGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKF_SM2CipherKeyPairGenerator.m; sourceTree = "<group>"; };
+		1C039BB22045395C004CB2A5 /* SKF_SM2Signer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKF_SM2Signer.m; sourceTree = "<group>"; };
+		1C039BBA20453AEA004CB2A5 /* SM2PublicKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SM2PublicKey.m; sourceTree = "<group>"; };
+		1C039BBB20453AEA004CB2A5 /* Destroyable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Destroyable.h; sourceTree = "<group>"; };
+		1C039BBC20453AEA004CB2A5 /* PublicKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicKey.h; sourceTree = "<group>"; };
+		1C039BBD20453AEA004CB2A5 /* SM2SignatureParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SM2SignatureParameter.m; sourceTree = "<group>"; };
+		1C039BBE20453AEA004CB2A5 /* SM2PrivateKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SM2PrivateKey.m; sourceTree = "<group>"; };
+		1C039BBF20453AEA004CB2A5 /* SM2KeyPairParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SM2KeyPairParameter.m; sourceTree = "<group>"; };
+		1C039BC020453AEA004CB2A5 /* SM2KeyPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SM2KeyPair.m; sourceTree = "<group>"; };
+		1C039BC120453AEA004CB2A5 /* SM2PrivateKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM2PrivateKey.h; sourceTree = "<group>"; };
+		1C039BC220453AEA004CB2A5 /* SM2SignatureParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM2SignatureParameter.h; sourceTree = "<group>"; };
+		1C039BC320453AEA004CB2A5 /* SM2PublicKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM2PublicKey.h; sourceTree = "<group>"; };
+		1C039BC420453AEA004CB2A5 /* SM2KeyPairParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM2KeyPairParameter.h; sourceTree = "<group>"; };
+		1C039BC520453AEA004CB2A5 /* SM2KeyPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM2KeyPair.h; sourceTree = "<group>"; };
+		1C039BC620453AEA004CB2A5 /* PrivateKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateKey.h; sourceTree = "<group>"; };
+		1C039BCD20453C51004CB2A5 /* SKF_SM2Engine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKF_SM2Engine.m; sourceTree = "<group>"; };
+		1C039BCE20453C51004CB2A5 /* SKF_SM2Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKF_SM2Engine.h; sourceTree = "<group>"; };
+		1C039BD0204543DC004CB2A5 /* SM2Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SM2Test.m; sourceTree = "<group>"; };
+		1C109134202A965100BCE55E /* SKF_HMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKF_HMAC.m; sourceTree = "<group>"; };
+		1C109135202A965100BCE55E /* MAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAC.h; sourceTree = "<group>"; };
+		1C109136202A965100BCE55E /* MAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAC.m; sourceTree = "<group>"; };
+		1C109137202A965100BCE55E /* macInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macInterface.h; sourceTree = "<group>"; };
+		1C109138202A965100BCE55E /* SKF_HMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKF_HMAC.h; sourceTree = "<group>"; };
+		1C3D4731202BE69800FA8873 /* AlgorithmParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmParameters.m; sourceTree = "<group>"; };
+		1C3D4732202BE69900FA8873 /* AlgorithmParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmParameters.h; sourceTree = "<group>"; };
+		1C46B725202068EE00C3398F /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		1C46B72C202068EE00C3398F /* StringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
+		1C471D9E204789CD0082AB72 /* Signature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Signature.m; sourceTree = "<group>"; };
+		1C471D9F204789CD0082AB72 /* Signature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Signature.h; sourceTree = "<group>"; };
+		1C4FD2FF2027EA1400FCA312 /* Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Key.h; sourceTree = "<group>"; };
+		1C4FD3002027EA1400FCA312 /* SecretKeySpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecretKeySpec.h; sourceTree = "<group>"; };
+		1C4FD3012027EA1400FCA312 /* IvParameterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IvParameterSpec.m; sourceTree = "<group>"; };
+		1C4FD3022027EA1400FCA312 /* IvParameterSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IvParameterSpec.h; sourceTree = "<group>"; };
+		1C4FD3032027EA1400FCA312 /* SecretKeySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecretKeySpec.m; sourceTree = "<group>"; };
+		1C4FD3042027EA1400FCA312 /* AlgorithmParameterSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmParameterSpec.h; sourceTree = "<group>"; };
+		1C5BC4F52022EDFC0013A982 /* MessageDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDigest.h; sourceTree = "<group>"; };
+		1C5BC4F62022EDFC0013A982 /* SKF_SM3Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKF_SM3Digest.m; sourceTree = "<group>"; };
+		1C5BC4F72022EDFC0013A982 /* DigestInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigestInterface.h; sourceTree = "<group>"; };
+		1C5BC4F82022EDFC0013A982 /* MessageDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDigest.m; sourceTree = "<group>"; };
+		1C5BC4F92022EDFC0013A982 /* SKF_SM3Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKF_SM3Digest.h; sourceTree = "<group>"; };
+		1C5BC4FC2022EE2B0013A982 /* ErrorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorUtil.h; sourceTree = "<group>"; };
+		1C5BC4FD2022EE2B0013A982 /* ErrorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorUtil.m; sourceTree = "<group>"; };
+		1C5C1F1E2028313F00590391 /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
+		1C8DA1D520439A8C007841B2 /* SecureRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureRandom.m; sourceTree = "<group>"; };
+		1C8DA1D620439A8C007841B2 /* SecureRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureRandom.h; sourceTree = "<group>"; };
+		1C8DA1D920439AA0007841B2 /* Certificate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Certificate.m; sourceTree = "<group>"; };
+		1C8DA1DA20439AA0007841B2 /* Certificate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Certificate.h; sourceTree = "<group>"; };
+		1C8DA1DD2043B495007841B2 /* SM4Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SM4Test.m; sourceTree = "<group>"; };
+		1C8DA1E02043E2CF007841B2 /* SKF_SM4Cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKF_SM4Cipher.h; sourceTree = "<group>"; };
+		1C8DA1E12043E2CF007841B2 /* Cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cipher.h; sourceTree = "<group>"; };
+		1C8DA1E22043E2CF007841B2 /* CipherInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CipherInterface.h; sourceTree = "<group>"; };
+		1C8DA1E32043E2CF007841B2 /* SKF_SM4Cipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKF_SM4Cipher.m; sourceTree = "<group>"; };
+		1C8DA1E42043E2CF007841B2 /* Cipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cipher.m; sourceTree = "<group>"; };
+		1C8DA1E52043E2CF007841B2 /* CipherMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CipherMode.h; sourceTree = "<group>"; };
+		D8C5C386202042B50043FE33 /* quickAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C5C389202042B50043FE33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8C5C38A202042B50043FE33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8C5C38C202042B50043FE33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D8C5C38D202042B50043FE33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D8C5C390202042B50043FE33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8C5C393202042B50043FE33 /* quickAPI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = quickAPI.xcdatamodel; sourceTree = "<group>"; };
+		D8C5C395202042B50043FE33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8C5C398202042B50043FE33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8C5C39A202042B50043FE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C5C39B202042B50043FE33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8C5C3A1202042B50043FE33 /* quickAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C5C3A5202042B50043FE33 /* quickAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quickAPITests.m; sourceTree = "<group>"; };
+		D8C5C3A7202042B50043FE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C5C3B2202043270043FE33 /* SimpleSecureCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleSecureCore.h; sourceTree = "<group>"; };
+		D8C5C3B3202043270043FE33 /* SimpleSecureCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleSecureCore.m; sourceTree = "<group>"; };
+		D8C5C3BC202061200043FE33 /* MultiKey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MultiKey.framework; sourceTree = "<group>"; };
+		D8C5C3BF202061750043FE33 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8C5C383202042B50043FE33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C5C3C02020617F0043FE33 /* libstdc++.tbd in Frameworks */,
+				D8C5C3BD202061200043FE33 /* MultiKey.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C5C39E202042B50043FE33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C46B73420206D3800C3398F /* MultiKey.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C039BA42045395C004CB2A5 /* SM2 */ = {
+			isa = PBXGroup;
+			children = (
+				1C471D9F204789CD0082AB72 /* Signature.h */,
+				1C471D9E204789CD0082AB72 /* Signature.m */,
+				1C039BA62045395C004CB2A5 /* KeyPair.h */,
+				1C039BAF2045395C004CB2A5 /* KeyPair.m */,
+				1C039BA72045395C004CB2A5 /* KeyPairGenerator.h */,
+				1C039BAE2045395C004CB2A5 /* KeyPairGenerator.m */,
+				1C039BAD2045395C004CB2A5 /* KeyPairGeneratorSpi.h */,
+				1C039BAC2045395C004CB2A5 /* SignatureSpi.h */,
+				1C039BB02045395C004CB2A5 /* SKF_SM2Cipher.h */,
+				1C039BAA2045395C004CB2A5 /* SKF_SM2Cipher.m */,
+				1C039BA92045395C004CB2A5 /* SKF_SM2CipherKeyPairGenerator.h */,
+				1C039BB12045395C004CB2A5 /* SKF_SM2CipherKeyPairGenerator.m */,
+				1C039BA52045395C004CB2A5 /* SKF_SM2SignatureKeyPairGenerator.h */,
+				1C039BAB2045395C004CB2A5 /* SKF_SM2SignatureKeyPairGenerator.m */,
+				1C039BA82045395C004CB2A5 /* SKF_SM2Signer.h */,
+				1C039BB22045395C004CB2A5 /* SKF_SM2Signer.m */,
+			);
+			path = SM2;
+			sourceTree = "<group>";
+		};
+		1C039BB920453AEA004CB2A5 /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				1C039BBB20453AEA004CB2A5 /* Destroyable.h */,
+				1C039BC620453AEA004CB2A5 /* PrivateKey.h */,
+				1C039BBC20453AEA004CB2A5 /* PublicKey.h */,
+				1C039BC520453AEA004CB2A5 /* SM2KeyPair.h */,
+				1C039BC020453AEA004CB2A5 /* SM2KeyPair.m */,
+				1C039BC420453AEA004CB2A5 /* SM2KeyPairParameter.h */,
+				1C039BBF20453AEA004CB2A5 /* SM2KeyPairParameter.m */,
+				1C039BC120453AEA004CB2A5 /* SM2PrivateKey.h */,
+				1C039BBE20453AEA004CB2A5 /* SM2PrivateKey.m */,
+				1C039BC320453AEA004CB2A5 /* SM2PublicKey.h */,
+				1C039BBA20453AEA004CB2A5 /* SM2PublicKey.m */,
+				1C039BC220453AEA004CB2A5 /* SM2SignatureParameter.h */,
+				1C039BBD20453AEA004CB2A5 /* SM2SignatureParameter.m */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		1C039BCC20453C51004CB2A5 /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				1C039BCD20453C51004CB2A5 /* SKF_SM2Engine.m */,
+				1C039BCE20453C51004CB2A5 /* SKF_SM2Engine.h */,
+			);
+			path = engine;
+			sourceTree = "<group>";
+		};
+		1C109133202A964800BCE55E /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				1C109135202A965100BCE55E /* MAC.h */,
+				1C109136202A965100BCE55E /* MAC.m */,
+				1C109137202A965100BCE55E /* macInterface.h */,
+				1C109138202A965100BCE55E /* SKF_HMAC.h */,
+				1C109134202A965100BCE55E /* SKF_HMAC.m */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		1C46B722202068EE00C3398F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1C5C1F1E2028313F00590391 /* defines.h */,
+				1C5BC4FC2022EE2B0013A982 /* ErrorUtil.h */,
+				1C5BC4FD2022EE2B0013A982 /* ErrorUtil.m */,
+				1C46B725202068EE00C3398F /* StringUtils.h */,
+				1C46B72C202068EE00C3398F /* StringUtils.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1C5BC4FF2022F1490013A982 /* DIgest */ = {
+			isa = PBXGroup;
+			children = (
+				1C5BC4F72022EDFC0013A982 /* DigestInterface.h */,
+				1C5BC4F52022EDFC0013A982 /* MessageDigest.h */,
+				1C5BC4F82022EDFC0013A982 /* MessageDigest.m */,
+				1C5BC4F92022EDFC0013A982 /* SKF_SM3Digest.h */,
+				1C5BC4F62022EDFC0013A982 /* SKF_SM3Digest.m */,
+			);
+			path = DIgest;
+			sourceTree = "<group>";
+		};
+		1C8DA1DF2043E2CF007841B2 /* SM4 */ = {
+			isa = PBXGroup;
+			children = (
+				1C8DA1E12043E2CF007841B2 /* Cipher.h */,
+				1C8DA1E42043E2CF007841B2 /* Cipher.m */,
+				1C8DA1E22043E2CF007841B2 /* CipherInterface.h */,
+				1C8DA1E52043E2CF007841B2 /* CipherMode.h */,
+				1C8DA1E02043E2CF007841B2 /* SKF_SM4Cipher.h */,
+				1C8DA1E32043E2CF007841B2 /* SKF_SM4Cipher.m */,
+			);
+			path = SM4;
+			sourceTree = "<group>";
+		};
+		D8C5C37D202042B50043FE33 = {
+			isa = PBXGroup;
+			children = (
+				D8C5C388202042B50043FE33 /* quickAPI */,
+				D8C5C3A4202042B50043FE33 /* quickAPITests */,
+				D8C5C387202042B50043FE33 /* Products */,
+				D8C5C3BE202061750043FE33 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8C5C387202042B50043FE33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5C386202042B50043FE33 /* quickAPI.app */,
+				D8C5C3A1202042B50043FE33 /* quickAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8C5C388202042B50043FE33 /* quickAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5C3BC202061200043FE33 /* MultiKey.framework */,
+				D8C5C389202042B50043FE33 /* AppDelegate.h */,
+				D8C5C38A202042B50043FE33 /* AppDelegate.m */,
+				D8C5C38C202042B50043FE33 /* ViewController.h */,
+				D8C5C38D202042B50043FE33 /* ViewController.m */,
+				D8C5C38F202042B50043FE33 /* Main.storyboard */,
+				D8C5C395202042B50043FE33 /* Assets.xcassets */,
+				D8C5C397202042B50043FE33 /* LaunchScreen.storyboard */,
+				D8C5C39A202042B50043FE33 /* Info.plist */,
+				D8C5C39B202042B50043FE33 /* main.m */,
+				D8C5C392202042B50043FE33 /* quickAPI.xcdatamodeld */,
+				D8C5C3B2202043270043FE33 /* SimpleSecureCore.h */,
+				D8C5C3B3202043270043FE33 /* SimpleSecureCore.m */,
+				1C8DA1DA20439AA0007841B2 /* Certificate.h */,
+				1C8DA1D920439AA0007841B2 /* Certificate.m */,
+				1C4FD3042027EA1400FCA312 /* AlgorithmParameterSpec.h */,
+				1C3D4732202BE69900FA8873 /* AlgorithmParameters.h */,
+				1C3D4731202BE69800FA8873 /* AlgorithmParameters.m */,
+				1C4FD3022027EA1400FCA312 /* IvParameterSpec.h */,
+				1C4FD3012027EA1400FCA312 /* IvParameterSpec.m */,
+				1C4FD2FF2027EA1400FCA312 /* Key.h */,
+				1C4FD3002027EA1400FCA312 /* SecretKeySpec.h */,
+				1C4FD3032027EA1400FCA312 /* SecretKeySpec.m */,
+				1C8DA1D620439A8C007841B2 /* SecureRandom.h */,
+				1C8DA1D520439A8C007841B2 /* SecureRandom.m */,
+				1C039BCC20453C51004CB2A5 /* engine */,
+				1C039BB920453AEA004CB2A5 /* DataStructure */,
+				1C46B722202068EE00C3398F /* Tools */,
+				1C5BC4FF2022F1490013A982 /* DIgest */,
+				1C109133202A964800BCE55E /* Mac */,
+				1C8DA1DF2043E2CF007841B2 /* SM4 */,
+				1C039BA42045395C004CB2A5 /* SM2 */,
+			);
+			path = quickAPI;
+			sourceTree = "<group>";
+		};
+		D8C5C3A4202042B50043FE33 /* quickAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5C3A5202042B50043FE33 /* quickAPITests.m */,
+				1C8DA1DD2043B495007841B2 /* SM4Test.m */,
+				1C039BD0204543DC004CB2A5 /* SM2Test.m */,
+				D8C5C3A7202042B50043FE33 /* Info.plist */,
+			);
+			path = quickAPITests;
+			sourceTree = "<group>";
+		};
+		D8C5C3BE202061750043FE33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5C3BF202061750043FE33 /* libstdc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8C5C385202042B50043FE33 /* quickAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C5C3AA202042B50043FE33 /* Build configuration list for PBXNativeTarget "quickAPI" */;
+			buildPhases = (
+				D8C5C382202042B50043FE33 /* Sources */,
+				D8C5C383202042B50043FE33 /* Frameworks */,
+				D8C5C384202042B50043FE33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = quickAPI;
+			productName = quickAPI;
+			productReference = D8C5C386202042B50043FE33 /* quickAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8C5C3A0202042B50043FE33 /* quickAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C5C3AD202042B50043FE33 /* Build configuration list for PBXNativeTarget "quickAPITests" */;
+			buildPhases = (
+				D8C5C39D202042B50043FE33 /* Sources */,
+				D8C5C39E202042B50043FE33 /* Frameworks */,
+				D8C5C39F202042B50043FE33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8C5C3A3202042B50043FE33 /* PBXTargetDependency */,
+			);
+			name = quickAPITests;
+			productName = quickAPITests;
+			productReference = D8C5C3A1202042B50043FE33 /* quickAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8C5C37E202042B50043FE33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = IIE;
+				TargetAttributes = {
+					D8C5C385202042B50043FE33 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D8C5C3A0202042B50043FE33 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D8C5C385202042B50043FE33;
+					};
+				};
+			};
+			buildConfigurationList = D8C5C381202042B50043FE33 /* Build configuration list for PBXProject "quickAPI" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8C5C37D202042B50043FE33;
+			productRefGroup = D8C5C387202042B50043FE33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8C5C385202042B50043FE33 /* quickAPI */,
+				D8C5C3A0202042B50043FE33 /* quickAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8C5C384202042B50043FE33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C5C399202042B50043FE33 /* LaunchScreen.storyboard in Resources */,
+				D8C5C396202042B50043FE33 /* Assets.xcassets in Resources */,
+				D8C5C391202042B50043FE33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C5C39F202042B50043FE33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8C5C382202042B50043FE33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C471DA0204789CD0082AB72 /* Signature.m in Sources */,
+				1C5BC4FE2022EE2B0013A982 /* ErrorUtil.m in Sources */,
+				1C8DA1E62043E2CF007841B2 /* SKF_SM4Cipher.m in Sources */,
+				1C4FD3052027EA1400FCA312 /* IvParameterSpec.m in Sources */,
+				1C039BCF20453C51004CB2A5 /* SKF_SM2Engine.m in Sources */,
+				D8C5C38E202042B50043FE33 /* ViewController.m in Sources */,
+				1C039BCA20453AEA004CB2A5 /* SM2KeyPairParameter.m in Sources */,
+				1C5BC4FA2022EDFC0013A982 /* SKF_SM3Digest.m in Sources */,
+				D8C5C38B202042B50043FE33 /* AppDelegate.m in Sources */,
+				1C039BC720453AEA004CB2A5 /* SM2PublicKey.m in Sources */,
+				1C109139202A965100BCE55E /* SKF_HMAC.m in Sources */,
+				1C039BB82045395C004CB2A5 /* SKF_SM2Signer.m in Sources */,
+				1C039BB72045395C004CB2A5 /* SKF_SM2CipherKeyPairGenerator.m in Sources */,
+				1C4FD3062027EA1400FCA312 /* SecretKeySpec.m in Sources */,
+				1C039BB52045395C004CB2A5 /* KeyPairGenerator.m in Sources */,
+				1C039BB42045395C004CB2A5 /* SKF_SM2SignatureKeyPairGenerator.m in Sources */,
+				1C46B731202068EF00C3398F /* StringUtils.m in Sources */,
+				1C039BCB20453AEA004CB2A5 /* SM2KeyPair.m in Sources */,
+				1C8DA1D720439A8C007841B2 /* SecureRandom.m in Sources */,
+				D8C5C39C202042B50043FE33 /* main.m in Sources */,
+				D8C5C3B4202043270043FE33 /* SimpleSecureCore.m in Sources */,
+				1C3D4733202BE69900FA8873 /* AlgorithmParameters.m in Sources */,
+				1C8DA1DB20439AA0007841B2 /* Certificate.m in Sources */,
+				D8C5C394202042B50043FE33 /* quickAPI.xcdatamodeld in Sources */,
+				1C039BB32045395C004CB2A5 /* SKF_SM2Cipher.m in Sources */,
+				1C5BC4FB2022EDFC0013A982 /* MessageDigest.m in Sources */,
+				1C039BB62045395C004CB2A5 /* KeyPair.m in Sources */,
+				1C039BC820453AEA004CB2A5 /* SM2SignatureParameter.m in Sources */,
+				1C039BC920453AEA004CB2A5 /* SM2PrivateKey.m in Sources */,
+				1C8DA1E82043E2CF007841B2 /* Cipher.m in Sources */,
+				1C10913A202A965100BCE55E /* MAC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C5C39D202042B50043FE33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5BD4882048E00C009EC08E /* SKF_SM2SignatureKeyPairGenerator.m in Sources */,
+				1C8DA1DE2043B495007841B2 /* SM4Test.m in Sources */,
+				1C5BD4962048E3A6009EC08E /* SM2KeyPair.m in Sources */,
+				1C5BD49C2048E77A009EC08E /* SecretKeySpec.m in Sources */,
+				D8C5C3A6202042B50043FE33 /* quickAPITests.m in Sources */,
+				1C5BD4992048E3B0009EC08E /* SM2PublicKey.m in Sources */,
+				1C5BD4832048DFFD009EC08E /* Signature.m in Sources */,
+				1C5BD4892048E00E009EC08E /* SKF_SM2Signer.m in Sources */,
+				1C5BD4952048E376009EC08E /* SKF_SM3Digest.m in Sources */,
+				1C5BD49B2048E777009EC08E /* IvParameterSpec.m in Sources */,
+				1C8DA1DC20439AA0007841B2 /* Certificate.m in Sources */,
+				1C039BD1204543DC004CB2A5 /* SM2Test.m in Sources */,
+				1C471DA120478C460082AB72 /* SimpleSecureCore.m in Sources */,
+				1C5BD48B2048E0A7009EC08E /* SKF_HMAC.m in Sources */,
+				1C8DA1E72043E2CF007841B2 /* SKF_SM4Cipher.m in Sources */,
+				1C5BD4862048E006009EC08E /* SKF_SM2Cipher.m in Sources */,
+				1C5BD49A2048E3B2009EC08E /* SM2SignatureParameter.m in Sources */,
+				1C5BD48A2048E0A5009EC08E /* MAC.m in Sources */,
+				1C5BD4972048E3A9009EC08E /* SM2KeyPairParameter.m in Sources */,
+				1C5BD4942048E373009EC08E /* MessageDigest.m in Sources */,
+				1C5BD4932048E36A009EC08E /* SKF_SM2Engine.m in Sources */,
+				1C5BD4982048E3AD009EC08E /* SM2PrivateKey.m in Sources */,
+				1C8DA1D820439A8C007841B2 /* SecureRandom.m in Sources */,
+				1C5BD4872048E008009EC08E /* SKF_SM2CipherKeyPairGenerator.m in Sources */,
+				1C5BD4912048E0CD009EC08E /* AlgorithmParameters.m in Sources */,
+				1C8DA1E92043E2CF007841B2 /* Cipher.m in Sources */,
+				1C5BD4842048DFFF009EC08E /* KeyPair.m in Sources */,
+				1C5BD4852048E001009EC08E /* KeyPairGenerator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8C5C3A3202042B50043FE33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8C5C385202042B50043FE33 /* quickAPI */;
+			targetProxy = D8C5C3A2202042B50043FE33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8C5C38F202042B50043FE33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C5C390202042B50043FE33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8C5C397202042B50043FE33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C5C398202042B50043FE33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8C5C3A8202042B50043FE33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8C5C3A9202042B50043FE33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8C5C3AB202042B50043FE33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/quickAPI",
+				);
+				INFOPLIST_FILE = quickAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iie.dcs.quickAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8C5C3AC202042B50043FE33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/quickAPI",
+				);
+				INFOPLIST_FILE = quickAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iie.dcs.quickAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8C5C3AE202042B50043FE33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/quickAPI",
+				);
+				INFOPLIST_FILE = quickAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iie.dcs.quickAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quickAPI.app/quickAPI";
+			};
+			name = Debug;
+		};
+		D8C5C3AF202042B50043FE33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/quickAPI",
+				);
+				INFOPLIST_FILE = quickAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iie.dcs.quickAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quickAPI.app/quickAPI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8C5C381202042B50043FE33 /* Build configuration list for PBXProject "quickAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C5C3A8202042B50043FE33 /* Debug */,
+				D8C5C3A9202042B50043FE33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C5C3AA202042B50043FE33 /* Build configuration list for PBXNativeTarget "quickAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C5C3AB202042B50043FE33 /* Debug */,
+				D8C5C3AC202042B50043FE33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C5C3AD202042B50043FE33 /* Build configuration list for PBXNativeTarget "quickAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C5C3AE202042B50043FE33 /* Debug */,
+				D8C5C3AF202042B50043FE33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8C5C392202042B50043FE33 /* quickAPI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8C5C393202042B50043FE33 /* quickAPI.xcdatamodel */,
+			);
+			currentVersion = D8C5C393202042B50043FE33 /* quickAPI.xcdatamodel */;
+			path = quickAPI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D8C5C37E202042B50043FE33 /* Project object */;
+}

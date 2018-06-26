@@ -1,0 +1,6 @@
+framework module SecurecoreMultiKey {
+  umbrella header "SecurecoreMultiKey.h"
+
+  export *
+  module * { export * }
+}

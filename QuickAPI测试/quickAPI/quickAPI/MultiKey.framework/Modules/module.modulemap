@@ -1,0 +1,6 @@
+framework module MultiKey {
+  umbrella header "MultiKey.h"
+
+  export *
+  module * { export * }
+}
